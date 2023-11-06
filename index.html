@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Splitter</title>
+</head>
+<body>
+    <h1>PDF Splitter</h1>
+    <p>Upload a PDF file to split it into individual pages.</p>
+
+    <form action="/split-pdf" method="POST" enctype="multipart/form-data">
+        <label for="pdfFile">Select a PDF file:</label>
+        <input type="file" name="pdfFile" id="pdfFile" accept=".pdf" required>
+        <br>
+        <input type="submit" value="Split PDF">
+    </form>
+</body>
+</html>
